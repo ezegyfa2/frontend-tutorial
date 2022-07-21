@@ -16,3 +16,35 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/basic-component', function () {
+    return view('basicComponent');
+});
+
+Route::get('/component-with-child', function () {
+    return view('componentWithChild');
+});
+
+Route::get('/basic-template', function () {
+    return view('basicTemplate');
+});
+
+Route::get('/basic-template-with-param-file', function () {
+    return view('basicTemplateWithParamFile');
+});
+
+Route::get('/template-with-sub-templates', function () {
+    return view('templateWithSubTemplates');
+});
+
+Route::get('/template-with-sub-templates-with-params', function () {
+    return view('templateWithSubTemplatesWithParams');
+});
+
+Route::get('/template-with-array-sub-templates', function () {
+    return view('templateWithArraySubTemplates');
+});
+
+Route::get('/template-with-object-array-sub-templates', function () {
+    return view('templateWithObjectArraySubTemplates');
+});
